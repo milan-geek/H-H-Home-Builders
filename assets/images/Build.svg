@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49.922" height="23.822" viewBox="0 0 49.922 23.822">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(1.594 0.5)">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(-0.079)">
+      <path id="Path_53" data-name="Path 53" d="M39.633,57.2v-.733H28.188V50.8h5.721a.727.727,0,0,1-.727-.727V49.35H27.457a.727.727,0,0,0-.727.727V57.2a.727.727,0,0,0,.727.727H40.375a.727.727,0,0,1-.742-.727Z" transform="translate(-18.991 -35.104)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      <path id="Path_54" data-name="Path 54" d="M84.369,60.784v-.733H72.923V54.39H71.48v6.394a.727.727,0,0,0,.727.727h12.9a.727.727,0,0,1-.742-.727Z" transform="translate(-50.823 -38.689)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      <path id="Path_55" data-name="Path 55" d="M129.761,49.35h-5.721v.727a.73.73,0,0,1-.73.727h5.724v5.661H117.588V50.8H116.13V57.2a.727.727,0,0,0,.727.727h12.9a.73.73,0,0,0,.73-.727V50.077A.73.73,0,0,0,129.761,49.35Z" transform="translate(-82.585 -35.104)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      <path id="Path_56" data-name="Path 56" d="M72.923,7.124V1.458H84.369V7.124h1.458V.727A.73.73,0,0,0,85.1,0H72.207a.727.727,0,0,0-.727.727v6.4Z" transform="translate(-50.823)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      <path id="Path_57" data-name="Path 57" d="M102.031,24.68H96.31a.727.727,0,0,1,.727.727v.727h11.446V31.8H97.037v.727a.727.727,0,0,1-.727.727h12.9a.73.73,0,0,0,.73-.727V25.407a.73.73,0,0,0-.73-.727Z" transform="translate(-68.486 -17.556)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      <path id="Path_58" data-name="Path 58" d="M49.807,33.256H62.714a.727.727,0,0,0,.727-.727V25.407a.727.727,0,0,0-.727-.727H49.807a.727.727,0,0,0-.727.727v7.121a.727.727,0,0,0,.727.727Zm.73-7.121H61.983V31.8H50.538Z" transform="translate(-34.89 -17.556)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      <line id="Line_17" data-name="Line 17" y1="0.727" transform="translate(3.611 3.64)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+      <line id="Line_18" data-name="Line 18" y1="0.257" transform="translate(3.611 21.11)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+      <line id="Line_19" data-name="Line 19" y1="0.727" transform="translate(3.611 8.008)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+      <line id="Line_20" data-name="Line 20" y1="0.727" transform="translate(3.611 16.743)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+      <line id="Line_21" data-name="Line 21" y1="0.727" transform="translate(3.611 12.375)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"/>
+      <path id="Path_59" data-name="Path 59" d="M11.429,63.214V61.032a.727.727,0,1,0-1.443,0v2.182a.727.727,0,1,0,1.443,0Z" transform="translate(-8.076 -42.832)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      <path id="Path_60" data-name="Path 60" d="M11.429,17.817V15.632a.727.727,0,1,0-1.443,0v2.185a.727.727,0,1,0,1.443,0Z" transform="translate(-8.076 -10.537)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      <path id="Path_61" data-name="Path 61" d="M11.429,32.947V30.762a.727.727,0,1,0-1.443,0v2.185a.727.727,0,1,0,1.443,0Z" transform="translate(-8.076 -21.3)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      <path id="Path_62" data-name="Path 62" d="M11.429,48.077V45.892a.727.727,0,1,0-1.443,0v2.185a.727.727,0,1,0,1.443,0Z" transform="translate(-8.076 -32.062)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      <path id="Path_63" data-name="Path 63" d="M11.429,6.533V5.09H9.986V6.533a.727.727,0,1,0,1.443,0Z" transform="translate(-8.076 -3.621)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      <path id="Path_64" data-name="Path 64" d="M4.274,1.49H6.433a.73.73,0,0,0,0-1.443H.7A.73.73,0,1,0,.7,1.5H4.274Z" transform="translate(-0.921 -0.032)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      <path id="Path_65" data-name="Path 65" d="M0,74.776a.727.727,0,0,0,.727.727H6.455a.727.727,0,0,0,0-1.443H.727A.727.727,0,0,0,0,74.776Z" transform="translate(-0.977 -52.681)" fill="#fff" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

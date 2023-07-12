@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-Favicon">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="Favicon" clip-path="url(#clip-Favicon)">
+    <rect width="500" height="500" fill="#fff"/>
+    <g id="Group_51" data-name="Group 51" transform="translate(-539 148)">
+      <rect id="Rectangle_91" data-name="Rectangle 91" width="54" height="204" transform="translate(585)" fill="#bf1e2e"/>
+      <rect id="Rectangle_92" data-name="Rectangle 92" width="54" height="204" transform="translate(708)" fill="#bf1e2e"/>
+      <rect id="Rectangle_93" data-name="Rectangle 93" width="48" height="127" transform="translate(614 120) rotate(-90)" fill="#bf1e2e"/>
+    </g>
+    <g id="Group_52" data-name="Group 52" transform="translate(-308 148)">
+      <rect id="Rectangle_91-2" data-name="Rectangle 91" width="54" height="204" transform="translate(585)" fill="#bf1e2e"/>
+      <rect id="Rectangle_92-2" data-name="Rectangle 92" width="54" height="204" transform="translate(708)" fill="#bf1e2e"/>
+      <rect id="Rectangle_93-2" data-name="Rectangle 93" width="48" height="127" transform="translate(614 120) rotate(-90)" fill="#bf1e2e"/>
+    </g>
+  </g>
+</svg>
