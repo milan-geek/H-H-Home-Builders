@@ -1624,34 +1624,52 @@ a:hover {
     color: var(--white-color);
 }
 
-.loading-more-link {
+
+.loading-more-btn {
+    background-color: transparent;
+    border: none;
     display: flex;
     gap: 16px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+.loading-more-btn .loading-more-text {
+    color: var(--red-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
     transition: 0.3s;
 }
 
-.loading-more-link:hover {
-    color: var(--primary-color);
+.loading-more-add-text{
+    display: none;
 }
 
-.loading-more-link .sub-title {
-    margin-bottom: 0;
-    transition: 0.3s;
+.loading-icon img{
+    display: none;
+    animation: loading 2s linear infinite;
 }
 
-.loading-more-link:hover .sub-title {
-    color: var(--primary-color);
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.loading-more-link img {
-    transition: 0.3s;
-}
 
-.loading-more-link:hover img {
-    filter: grayscale(100%);
-}
+
+
+
+
+
+
 
 .back-img {
     background-size: cover;
@@ -3617,7 +3635,9 @@ button.close:hover {
 }
 
 .our-home-sec-link {
-    margin-top: 44px;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
 }
 
 /*========== Our Home [Page] End ==========*/
@@ -4094,7 +4114,9 @@ html.overflow-v body {
 }
 
 .blog-page-sec-link {
-    margin-top: 40px;
+    margin-top: 44px;
+    display: flex;
+    justify-content: center;
 }
 
 .blog-page-sec .common-image-box-2 .h5-title {
@@ -5443,8 +5465,7 @@ a.prev.page-numbers {
         background-position: right;
     }
 
-    .top-fixed-btn{
-        display: none;
+    .top-fixed-btn {
         top: auto;
         bottom: 0;
         right: auto;
@@ -5521,6 +5542,16 @@ a.prev.page-numbers {
         --container-space: 0px;
     }
 
+    .awards-certification-slider {
+        width: 991px;
+        max-width: unset;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+
     .awards-certification-image {
         width: 179px;
         height: 137px;
@@ -5537,6 +5568,16 @@ a.prev.page-numbers {
 
     .awards-certification-box::before {
         opacity: 1;
+    }
+
+    .gallery-view.sec-space-x {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .energy-star.sec-space-x {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .energy-star .sec-wp {
@@ -5772,13 +5813,9 @@ a.prev.page-numbers {
 
     /*===== Single Post Page Section End =====*/
 
-
-
 }
 
 @media screen and (max-width: 767px) {
-
-
     .h1-title {
         font-size: 75px;
         line-height: 74px;
@@ -5805,18 +5842,9 @@ a.prev.page-numbers {
         padding: 24px 0px 26px 0px;
     }
 
-    .slick-center .awards-certification-box::before {
-        --extra-space: 100px;
-    }
-
     .awards-certification-slider.slick-slider [class*=col-] {
         padding-right: 0px;
         padding-left: 0px;
-    }
-
-    .energy-star.sec-space-x {
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
     .energy-star-logo {
@@ -5826,11 +5854,6 @@ a.prev.page-numbers {
 
     .energy-star .sec-wp {
         background-size: 550px;
-    }
-
-    .gallery-view.sec-space-x {
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
     .gallery-view-image {
@@ -5983,18 +6006,6 @@ a.prev.page-numbers {
     }
 
     /*===== Single Post Section End =====*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     .comment-form p.comment-form-author,
@@ -6177,7 +6188,19 @@ a.prev.page-numbers {
     }
 
     .awards-certification .sec-wp {
-        padding: 40px 0 146px 0;
+        padding: 40px 0 90px 0;
+    }
+
+    .awards-certification .sec-title{
+        margin-bottom: 38px;
+    }
+
+    .awards-certification-slider .slick-list {
+        padding: 40px 0 !important;
+    }
+
+    .slick-center .awards-certification-box {
+        padding: 0px 0px 0px 0px;
     }
 
     .slick-center .awards-certification-box .awards-certification-image {
@@ -6186,11 +6209,12 @@ a.prev.page-numbers {
     }
 
     .slick-center .awards-certification-box::before {
-        --extra-space: 190px;
+        height: 366px;
+        --extra-space: 29px;
     }
 
-    .slick-center .awards-certification-box::before {
-        height: 366px;
+    .awards-certification-slider .slick-dots{
+        bottom: -50px;
     }
 
     .gallery-view {
@@ -6270,7 +6294,7 @@ a.prev.page-numbers {
         display: block;
     }
 
-    .copy-right-left-contant p span.vr-line{
+    .copy-right-left-contant p span.vr-line {
         display: none;
     }
 
@@ -6438,10 +6462,6 @@ a.prev.page-numbers {
         height: 300px;
     }
 
-    .our-home-sec-link {
-        margin-top: 40px;
-    }
-
     /*===== Our Home Page Section End =====*/
 
     /*===== Project Details Page Section Start =====*/
@@ -6528,7 +6548,7 @@ a.prev.page-numbers {
     }
 
     .blog-page-sec-link {
-        margin-top: 35px;
+        margin-top: 30px;
     }
 
     .blog-page-sec .common-image-box-2 .h5-title {
@@ -6575,14 +6595,6 @@ a.prev.page-numbers {
     }
 
     /*===== Single Post Page Section End =====*/
-
-
-
-
-
-
-
-
 
     .container,
     .container-fluid,
@@ -6727,8 +6739,6 @@ a.prev.page-numbers {
         height: 300px;
     }
 
-
-
     .header-mobile-menu {
         padding: 16.3vh 30px 30px 80px;
     }
@@ -6790,11 +6800,11 @@ a.prev.page-numbers {
         padding-right: 15px;
     }
 
-    .footer-top-box [class*="col-"]{
+    .footer-top-box [class*="col-"] {
         width: 100%;
     }
 
-    .footer-logo-box{
+    .footer-logo-box {
         margin: 0 auto;
     }
 
@@ -6804,11 +6814,11 @@ a.prev.page-numbers {
         text-align: center;
     }
 
-    .footer-contact-info a{
+    .footer-contact-info a {
         gap: 10px;
     }
 
-    .footer-contact-info a .contact-text{
+    .footer-contact-info a .contact-text {
         font-size: 18px;
     }
 
@@ -6948,7 +6958,7 @@ a.prev.page-numbers {
     /*===== Blog Page Section Start =====*/
 
     .blog-page-sec .common-image-box-2 .h5-title {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     /*===== Blog Page Section End =====*/
@@ -6961,25 +6971,6 @@ a.prev.page-numbers {
     }
 
     /*===== Single Page Section End =====*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     .container,
     .container-fluid,

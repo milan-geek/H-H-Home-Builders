@@ -341,4 +341,14 @@ jQuery(document).ready(function ($) {
         $(this).hide();
     });
 
+    /* For Load More Button */
+    $(".loading-more-btn").click(function () {
+        $('.loading-more-text').html('loading more items')
+        $('.loading-icon img').css('display', 'block')
+        setTimeout(function () {
+            $('.loading-more-text').html('Load more items')
+            $(".loading-icon img").hide("2000")
+        }, 1000);
+    });
+
 });
