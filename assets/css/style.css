@@ -5276,7 +5276,7 @@ a.prev.page-numbers {
     .toggled .menu-toggle span:nth-child(1) {
         transform: rotate(45deg);
         position: relative;
-        top: 13px;
+        top: 14px;
     }
 
     .toggled .menu-toggle span:nth-child(2) {
@@ -5286,7 +5286,7 @@ a.prev.page-numbers {
     .toggled .menu-toggle span:nth-child(3) {
         transform: rotate(-45deg);
         position: relative;
-        top: -8px;
+        top: -6px;
     }
 
     .main-header.transparent-header .menu-toggle span {
@@ -5305,7 +5305,7 @@ a.prev.page-numbers {
         width: 100vw;
         height: 100vh;
         background-color: var(--primary-color);
-        padding: 16.3vh 30px 30px 150px;
+        padding: 21vh 30px 30px 150px;
         overflow: auto;
         opacity: 0;
         scrollbar-color: transparent transparent;
@@ -5443,13 +5443,14 @@ a.prev.page-numbers {
         background-position: right;
     }
 
-    /* .top-fixed-btn{
+    .top-fixed-btn{
+        display: none;
         top: auto;
         bottom: 0;
         right: auto;
         left: 50%;
         transform: translate(-50%, 0%)
-    } */
+    }
 
     .about-contant {
         margin-bottom: 40px;
@@ -5959,6 +5960,19 @@ a.prev.page-numbers {
 
     /*===== Login Page Section End =====*/
 
+    /*===== Blog Page Section Start =====*/
+
+    .blog-page-sec .common-image-box-2 .common-image-2 {
+        margin-bottom: 15px;
+    }
+
+    .blog-page-sec .common-image-box-2 .h5-title {
+        font-size: 16px;
+    }
+
+    /*===== Blog Page Section End =====*/
+
+
     /*===== Single Post Section Start =====*/
 
     .you-may-also-like-slider .slick-list {
@@ -6215,7 +6229,9 @@ a.prev.page-numbers {
     }
 
     .footer-top-box {
-        padding: 30px 0;
+        padding: 30px 30px;
+        width: calc(100% + 60px);
+        margin-left: -30px;
     }
 
     .footer-logo-box {
@@ -6244,6 +6260,18 @@ a.prev.page-numbers {
 
     .footer-description-text {
         padding: 29px 0 31px 0;
+    }
+
+    .bottom-footer {
+        padding: 30px 0 35px 0;
+    }
+
+    .copy-right-left-contant p span {
+        display: block;
+    }
+
+    .copy-right-left-contant p span.vr-line{
+        display: none;
     }
 
     /*===== About Page Section Start =====*/
@@ -6503,6 +6531,10 @@ a.prev.page-numbers {
         margin-top: 35px;
     }
 
+    .blog-page-sec .common-image-box-2 .h5-title {
+        font-size: 20px;
+    }
+
     /*===== Blog Page Section End =====*/
 
     /*===== Single Post Page Section Start =====*/
@@ -6758,8 +6790,34 @@ a.prev.page-numbers {
         padding-right: 15px;
     }
 
-    .about-company-info {
-        margin-bottom: 30px;
+    .footer-top-box [class*="col-"]{
+        width: 100%;
+    }
+
+    .footer-logo-box{
+        margin: 0 auto;
+    }
+
+    .footer-logo-text-info {
+        margin-left: 0px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .footer-contact-info a{
+        gap: 10px;
+    }
+
+    .footer-contact-info a .contact-text{
+        font-size: 18px;
+    }
+
+    .footer-social-media .login-btn {
+        font-size: 16px;
+    }
+
+    .footer-page-link {
+        column-gap: 30px;
     }
 
     /*===== About Page Section Start =====*/
@@ -6772,6 +6830,10 @@ a.prev.page-numbers {
     .inner-banner-contant .h1-title {
         font-size: 50px;
         line-height: 54px;
+    }
+
+    .about-company-info {
+        margin-bottom: 30px;
     }
 
     .about-company .common-image-group .common-image {
@@ -6857,6 +6919,14 @@ a.prev.page-numbers {
         width: 100%;
     }
 
+    .our-home-inner-big-image {
+        height: 200px;
+    }
+
+    .our-home-inner-small-image {
+        height: 200px;
+    }
+
     .home-details-list {
         margin-bottom: 25px;
     }
@@ -6877,8 +6947,8 @@ a.prev.page-numbers {
 
     /*===== Blog Page Section Start =====*/
 
-    .common-image-box-2 .h5-title {
-        font-size: 18px;
+    .blog-page-sec .common-image-box-2 .h5-title {
+        font-size: 16px;
     }
 
     /*===== Blog Page Section End =====*/
