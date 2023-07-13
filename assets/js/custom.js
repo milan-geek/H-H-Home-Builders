@@ -123,26 +123,6 @@ jQuery(document).ready(function ($) {
         centerPadding: '0px',
         autoplay: false,
         autoplaySpeed: 2000,
-        responsive: [{
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                arrows: false,
-            }
-        }, {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-                arrows: false,
-            }
-        }, {
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 3,
-                arrows: false,
-            }
-        }]
     });
 
     // For Gallery View Slider
@@ -275,33 +255,13 @@ jQuery(document).ready(function ($) {
     });
 
     // For Mobile Dropdown
-    $width = $(window).width();
-    if ($width <= 991) {
-        $('.menu-toggle').click(function () {
-            // $(this).toggleClass('toggled');
-            $(".main-navigation").toggleClass('toggled');
-            $(".dropdown-nav-item").removeClass('dropdown-active');
-        })
-
-        $('.dropdown-nav-item > a').click(function () {
-            $(".dropdown-nav-item").toggleClass('dropdown-active');
-        })
-
-        $('.main-menu li a:not(.dropdown-nav-item > a)').click(function () {
-            // $('.menu-toggle').removeClass('active');
-            // $(".nav-right").removeClass('active');
-            // $(".dropdown-nav-item").removeClass('dropdown-active');
-        })
-    }
-
-    /* Mobile Menu JS */
-    // $("#main-menu .menu-item a").click(function () {
-    //     $("#site-navigation").removeClass("toggled");
-    // });
-
     var window_size = $(window).width();
-
     if (window_size <= 991) {
+        $('.menu-toggle').click(function () {
+            $(".main-navigation").toggleClass('toggled');
+            $(".menu-item-has-children").removeClass('active-sub-menu');
+            $(".menu-item-has-children").find('.sub-menu').css('display', 'none');
+        })
 
         /* dropDown mobile menu */
         $(".menu-item-has-children a").first().attr('href', 'javascript:void(0);');
@@ -311,7 +271,8 @@ jQuery(document).ready(function ($) {
             if (($(this).hasClass('active-sub-menu'))) {
                 $(this).removeClass('active-sub-menu');
                 $(this).find('.sub-menu').css('display', 'none');
-            } else {
+            }
+            else {
                 $(".menu-item-has-children").removeClass('active-sub-menu');
                 $(".sub-menu").css('display', 'none');
                 $(this).addClass('active-sub-menu');
@@ -320,6 +281,10 @@ jQuery(document).ready(function ($) {
         });
     }
 
+    /* Mobile Menu JS */
+    $("#main-menu .menu-item a").click(function () {
+        $("#site-navigation").removeClass("toggled");
+    });
 
     /* For Fancybox */
     Fancybox.bind('[data-fancybox="video-gallery"]', {
@@ -343,7 +308,7 @@ jQuery(document).ready(function ($) {
 
     /* For Load More Button */
     $(".loading-more-btn").click(function () {
-        $('.loading-more-text').html('loading more items')
+        $('.loading-more-text').html('Loading more items')
         $('.loading-icon img').css('display', 'block')
         setTimeout(function () {
             $('.loading-more-text').html('Load more items')

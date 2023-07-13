@@ -2710,8 +2710,27 @@ button.close:hover {
     margin-bottom: 25px;
 }
 
-.our-testimonials-contant .our-testimonials-text-info p:last-of-type {
-    margin-bottom: 0;
+.our-testimonials-contant .our-testimonials-text-info .testimonials-description-text{
+    height: 260px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.testimonials-description-text::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(112, 112, 112, 50%);
+}
+.testimonials-description-text::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--red-color);
+}
+.testimonials-description-text::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+
+.our-testimonials-contant .our-testimonials-text-info .testimonials-description-text p:last-of-type{
+    margin-bottom: 0px;
 }
 
 .our-testimonials-right {
@@ -5213,22 +5232,20 @@ a.prev.page-numbers {
 
 @media screen and (max-width: 991px) {
 
-    .for-des,
-    .scrolltop,
-    .main-banner .banner-video {
-        display: none !important;
-    }
-
     .for-mob {
         display: block !important
     }
 
-    .for-des-flex {
+    .for-mob-flex {
+        display: flex !important;
+    }
+
+    .for-des{
         display: none !important;
     }
 
-    .for-mob-flex {
-        display: flex !important;
+    .for-des-flex {
+        display: none !important;
     }
 
     .menu-des {
@@ -5511,6 +5528,10 @@ a.prev.page-numbers {
 
     .check-our-home-btn {
         margin-top: 78px;
+    }
+
+    .our-testimonials-contant .our-testimonials-text-info .testimonials-description-text {
+        height: 145px;
     }
 
     .our-testimonials-left {
@@ -5816,6 +5837,13 @@ a.prev.page-numbers {
 }
 
 @media screen and (max-width: 767px) {
+    .scrolltop{
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        padding: 5px;
+    }
+
     .h1-title {
         font-size: 75px;
         line-height: 74px;
@@ -6041,7 +6069,6 @@ a.prev.page-numbers {
         font-weight: 700;
     }
 
-
     .banner-contant .sec-title {
         margin-bottom: 25px;
     }
@@ -6161,6 +6188,10 @@ a.prev.page-numbers {
         color: var(--white-color);
     }
 
+    .our-testimonials-contant .our-testimonials-text-info .testimonials-description-text {
+        height: 290px;
+    }
+
     .our-testimonials-left {
         padding: 0px 0 32px 0;
     }
@@ -6245,6 +6276,10 @@ a.prev.page-numbers {
     .energy-star .sec-wp {
         padding: 30px 0;
         background-size: 440px;
+    }
+
+    .energy-star-text-info{
+        margin-top: -7px;
     }
 
     .energy-star-text-info p {
@@ -6640,6 +6675,10 @@ a.prev.page-numbers {
 
 @media screen and (max-width: 425px) {
 
+    .banner-slide-bg {
+        padding: 210px 0 200px 0;
+    }
+
     /*===== Project Details Page Section Start =====*/
 
     .property-feature-list {
@@ -6653,8 +6692,8 @@ a.prev.page-numbers {
 
 @media screen and (max-width: 400px) {
     .h1-title {
-        font-size: 55px;
-        line-height: 56px;
+        font-size: 48px;
+        line-height: 50px;
     }
 
     .h2-title {
@@ -6743,10 +6782,6 @@ a.prev.page-numbers {
         padding: 16.3vh 30px 30px 80px;
     }
 
-    .banner-slide-bg {
-        padding: 277px 0 275px 0;
-    }
-
     .banner-contant .h3-title {
         font-size: 25px;
         line-height: 28px;
@@ -6788,6 +6823,15 @@ a.prev.page-numbers {
 
     .our-testimonials-image {
         height: 345px;
+    }
+
+    .slick-center .awards-certification-box {
+        
+    }
+
+    .slick-center .awards-certification-box::before {
+        height: 320px;
+        --extra-space: 0px;
     }
 
     .gallery-view.sec-space-x {
@@ -6838,8 +6882,8 @@ a.prev.page-numbers {
     }
 
     .inner-banner-contant .h1-title {
-        font-size: 50px;
-        line-height: 54px;
+        font-size: 45px;
+        line-height: 50px;
     }
 
     .about-company-info {
@@ -6920,6 +6964,18 @@ a.prev.page-numbers {
         margin-bottom: 15px;
     }
 
+    .our-home-image-text-info .h5-title {
+        margin-bottom: 8px;
+    }
+
+    .gallery-feature-list li .gallery-feature-box {
+        padding: 8px 8px;
+    }
+
+    .gallery-feature-list{
+        column-gap: 12px;
+    }
+
     /*===== Our Home Page Section End =====*/
 
 
@@ -6966,8 +7022,8 @@ a.prev.page-numbers {
     /*===== Single Page Section Start =====*/
 
     .single-post-inner-banner .inner-banner {
-        padding: 170px 0 70px 0;
-        min-height: 590px;
+        padding: 140px 0 50px 0;
+        min-height: 480px;
     }
 
     /*===== Single Page Section End =====*/
