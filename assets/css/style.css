@@ -2717,15 +2717,15 @@ button.close:hover {
 }
 
 .testimonials-description-text::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
     background-color: rgb(112, 112, 112, 50%);
 }
 .testimonials-description-text::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: var(--red-color);
 }
 .testimonials-description-text::-webkit-scrollbar-track {
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 
@@ -3106,17 +3106,37 @@ button.close:hover {
 
 .footer-description-text {
     padding: 34px 0 38px 0;
-    max-width: 1034px;
-    text-align: center;
-    margin: auto;
 }
 
-.footer-description-text p {
+.footer-blog-link{
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-blog-link li{
+    display: inline-block;
+    margin: 7px 5px 7px 0;
+    padding-right: 5px;
+    line-height: 1;
+    border-right: 1px solid var(--common-color);
+}
+
+.footer-blog-link li:last-child{
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+
+.footer-blog-link li a{
+    color: var(--common-color);
     font-size: 14px;
 }
 
-.footer-description-text p:last-of-type {
-    margin-bottom: 0;
+.footer-blog-link li a:hover{
+    color: var(--white-color);
 }
 
 .bottom-footer {
@@ -3991,6 +4011,7 @@ section.our-home-inner-page-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px;
 }
 
 .events-page-image img {
@@ -5185,8 +5206,9 @@ a.prev.page-numbers {
     }
 
     .footer-page-link {
-        gap: 17px;
-        justify-content: start;
+        justify-content: center;
+        margin-right: 0px;
+        margin-top: 20px;
     }
 
     .footer-btn-info {
@@ -5617,14 +5639,11 @@ a.prev.page-numbers {
     }
 
     .footer-page-link {
-        gap: 30px;
-        margin-top: 20px;
-        justify-content: center;
-        margin-right: 0px;
+        gap: 28px;
     }
 
-    .footer-description-text {
-        max-width: unset;
+    .bottom-footer {
+        padding: 30px 0 80px 0;
     }
 
     .bottom-footer .copy-right-left-contant {
@@ -5749,10 +5768,6 @@ a.prev.page-numbers {
 
     .events-page-sec-text .sec-title {
         max-width: unset;
-    }
-
-    .events-page-sec-image-box {
-        height: 500px;
     }
 
     /*===== Event Home Page Section End =====*/
@@ -5937,15 +5952,6 @@ a.prev.page-numbers {
 
     /*===== Event Page Section Start =====*/
 
-    .events-page-sec-image-box {
-        height: 100%;
-        padding: 40px;
-    }
-
-    .events-page-image {
-        width: 370px;
-        max-width: 100%;
-    }
 
     /*===== Event Page Section End =====*/
 
@@ -6321,10 +6327,6 @@ a.prev.page-numbers {
         padding: 29px 0 31px 0;
     }
 
-    .bottom-footer {
-        padding: 30px 0 35px 0;
-    }
-
     .copy-right-left-contant p span {
         display: block;
     }
@@ -6473,8 +6475,9 @@ a.prev.page-numbers {
         margin-bottom: 22px;
     }
 
-    .events-page-image {
-        width: 260px;
+    .events-page-sec-image-box{
+        padding: 20px;
+        height: 75vw;
     }
 
     /*===== Event Page Section End =====*/
@@ -6808,6 +6811,10 @@ a.prev.page-numbers {
         padding-right: 15px;
     }
 
+    .our-testimonials-contant .our-testimonials-text-info .testimonials-description-text {
+        height: 235px;
+    }
+
     .our-testimonials-contant .our-testimonials-icon {
         width: 75px;
     }
@@ -6825,8 +6832,13 @@ a.prev.page-numbers {
         height: 345px;
     }
 
+    .awards-certification-box{
+        width: calc(100% + 30px);
+    }
+
     .slick-center .awards-certification-box {
-        
+        width: 280px;
+        margin: 0 auto;
     }
 
     .slick-center .awards-certification-box::before {
@@ -6981,16 +6993,12 @@ a.prev.page-numbers {
 
     /*===== Project Details Page Section Start =====*/
 
-    .our-home-inner-page-image [class*=col-] {
-        width: 100%;
-    }
-
     .our-home-inner-big-image {
-        height: 200px;
+        height: 100%;
     }
 
     .our-home-inner-small-image {
-        height: 200px;
+        height: 175px;
     }
 
     .home-details-list {
