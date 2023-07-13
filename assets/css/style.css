@@ -1424,8 +1424,8 @@ a:hover {
 .woocommerce a.button:hover,
 .woocommerce button.button:hover,
 .woocommerce input.button:hover {
-    background-color: var(--white-color);
-    color: var(--red-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 
@@ -1435,6 +1435,7 @@ a:hover {
 
 .sec-btn.black-btn:hover {
     background-color: var(--white-color);
+    color: var(--red-color);
 }
 
 .sec-btn.border-btn {
@@ -2260,7 +2261,7 @@ button.close:hover {
 .main-navigation ul.main-menu li.menu-item-has-children>a:after {
     content: "\f078";
     position: absolute;
-    top: 55%;
+    top: 51%;
     right: 0;
     transform: translate(0, -50%);
     font-family: "Font Awesome 5 Free";
@@ -2420,10 +2421,6 @@ button.close:hover {
 
 .banner-btn .sec-btn span {
     transition: 0.3s;
-}
-
-.banner-btn .sec-btn:hover span {
-    color: var(--red-color);
 }
 
 /*===== Main Banner End =====*/
@@ -2637,8 +2634,13 @@ button.close:hover {
     object-fit: cover;
 }
 
-.our-home-box .h5-title {
+.check-our-home-slider .our-home-box:hover .our-home-image-info .h5-title{
+    color: var(--red-color);
+}
+
+.our-home-box .our-home-image-info .h5-title {
     margin-bottom: 16px;
+    transition: 0.3s;
 }
 
 .our-home-box .our-home-image-info p {
@@ -2839,14 +2841,13 @@ button.close:hover {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--white-color);
-    box-shadow: 0 1px 2px 0 rgb(0, 0, 0, 8%);
+    background-color: rgb(255 255 255/70%);
+    box-shadow: 0 1px 2px rgb(0 0 0/8%);
     z-index: -1;
     opacity: 0.7;
 }
 
 .slick-center .awards-certification-box::before {
-    content: '';
     --extra-space: 60px;
     width: calc(100% + var(--extra-space));
     max-width: unset;
@@ -2854,7 +2855,8 @@ button.close:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 4px 12px 0 rgb(0, 0, 0, 8%);
+    background-color: var(--white-color);
+    box-shadow: 0 4px 12px rgb(0 0 0/8%);
 }
 
 .slick-center .awards-certification-box {
@@ -4136,6 +4138,14 @@ html.overflow-v body {
 
 .you-may-also-like-slider .prev-arrow.slick-arrow:hover {
     color: var(--white-color);
+}
+
+.you-may-also-like-slider .common-image-box-2 .h5-title{
+    transition: 0.3s;
+}
+
+.you-may-also-like-slider .common-image-box-2:hover .h5-title{
+    color: var(--red-color);
 }
 
 /*===== You May Also Like Section End =====*/
@@ -6998,7 +7008,7 @@ a.prev.page-numbers {
     }
 
     .our-home-inner-small-image {
-        height: 175px;
+        height: 145px;
     }
 
     .home-details-list {
@@ -7007,6 +7017,10 @@ a.prev.page-numbers {
 
     .gallery-feature-image {
         height: 260PX;
+    }
+
+    .check-our-home-slider .slick-list {
+        width: calc(100% + 390px);
     }
 
     /*===== Project Details Page Section End =====*/
