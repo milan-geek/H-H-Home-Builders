@@ -5729,17 +5729,14 @@ a.prev.page-numbers {
         margin-top: 78px;
     }
 
-    .our-testimonials-contant .our-testimonials-text-info .testimonials-description-text {
-        height: 145px;
-    }
-
     .our-testimonials-left {
-        padding: 78px 0 78px 0;
+        padding: 78px 0 40px 0;
     }
 
     .our-testimonials-contant {
-        max-width: unset;
+        max-width: 720px;
         padding-left: 30px;
+        margin: auto;
     }
 
     .our-testimonials-image {
