@@ -3168,6 +3168,7 @@ button.close:hover {
 
 .bottom-footer p a:hover {
     color: var(--red-color);
+    text-decoration: underline !important;
 }
 
 .footer-bottom-link li {
@@ -6366,10 +6367,6 @@ a.prev.page-numbers {
         color: var(--white-color);
     }
 
-    .our-testimonials-contant .our-testimonials-text-info .testimonials-description-text {
-        height: 290px;
-    }
-
     .our-testimonials-left {
         padding: 0px 0 32px 0;
     }
@@ -7000,11 +6997,17 @@ a.prev.page-numbers {
         height: 345px;
     }
 
+    .awards-certification-slider.slick-slider [class*=col-]{
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+
     .slick-center .awards-certification-box::before {
         height: 320px;
         --extra-space: 0px;
+        width: 290px;
     }
-
+    
     .gallery-view.sec-space-x {
         padding-left: 15px;
         padding-right: 15px;
