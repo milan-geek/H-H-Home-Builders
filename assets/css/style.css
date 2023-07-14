@@ -2845,6 +2845,7 @@ button.close:hover {
     box-shadow: 0 1px 2px rgb(0 0 0/8%);
     z-index: -1;
     opacity: 0.7;
+    transition: 0.3s;
 }
 
 .slick-center .awards-certification-box::before {
@@ -3167,6 +3168,30 @@ button.close:hover {
 .bottom-footer p a:hover {
     color: var(--red-color);
 }
+
+.footer-bottom-link li{
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 300;
+    display: inline-block;
+    color: var(--border-color);
+    padding-right: 5px;
+    margin-right: 1px;
+    border-right: 1px solid var(--border-color);
+}
+
+.footer-bottom-link li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+
+.footer-bottom-link li a{
+    color: var(--border-color);
+    font-weight: 300;
+
+}
+
 
 /*===== Scroll To Top Css Start =====*/
 .scrolltop {
@@ -3684,8 +3709,6 @@ button.close:hover {
 /*========== Our Home [Page] End ==========*/
 
 /*========== Project Details [Page] Start ==========*/
-
-
 
 /*===== Our Home Inner Page Section Start =====*/
 
@@ -5665,6 +5688,13 @@ a.prev.page-numbers {
         text-align: center;
     }
 
+    .footer-bottom-link li:first-child {
+        display: block;
+        margin: 0;
+        padding-right: 0;
+        border-right: 0;
+    }
+
     /*===== About Page Section Start =====*/
 
     .inner-banner-contant .h1-title {
@@ -6840,15 +6870,6 @@ a.prev.page-numbers {
 
     .our-testimonials-image {
         height: 345px;
-    }
-
-    .awards-certification-box{
-        width: calc(100% + 30px);
-    }
-
-    .slick-center .awards-certification-box {
-        width: 280px;
-        margin: 0 auto;
     }
 
     .slick-center .awards-certification-box::before {
