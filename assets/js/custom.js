@@ -316,6 +316,19 @@ jQuery(document).ready(function ($) {
         }, 1000);
     });
 
-    
+    /* For Load More Button Blog Section*/
+    $(".blog-page-sec .col-sm-6").slice(0, 12).show();
+    $("body").on('click touchstart', '.loading-more-btn', function (e) {
+        e.preventDefault();
+        $(".blog-page-sec .col-sm-6:hidden").slice(0, 3).slideDown();
+        if ($(".blog-page-sec .col-sm-6:hidden").length == 0) {
+            $(".loading-more-btn").css('visibility', 'hidden');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset(1).top
+        }, 1000);
+    });
+
+
 
 });

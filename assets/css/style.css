@@ -1645,11 +1645,11 @@ a:hover {
     transition: 0.3s;
 }
 
-.loading-more-add-text{
+.loading-more-add-text {
     display: none;
 }
 
-.loading-icon img{
+.loading-icon img {
     display: none;
     animation: loading 2s linear infinite;
 }
@@ -1734,7 +1734,6 @@ a:hover {
     line-height: 17px;
     color: rgb(104, 103, 111, 60%);
 }
-
 
 /*==========Common CSS End==========*/
 
@@ -2634,7 +2633,7 @@ button.close:hover {
     object-fit: cover;
 }
 
-.check-our-home-slider .our-home-box:hover .our-home-image-info .h5-title{
+.check-our-home-slider .our-home-box:hover .our-home-image-info .h5-title {
     color: var(--red-color);
 }
 
@@ -2712,7 +2711,7 @@ button.close:hover {
     margin-bottom: 25px;
 }
 
-.our-testimonials-contant .our-testimonials-text-info .testimonials-description-text{
+.our-testimonials-contant .our-testimonials-text-info .testimonials-description-text {
     height: 260px;
     overflow-y: auto;
     padding-right: 15px;
@@ -2722,16 +2721,18 @@ button.close:hover {
     width: 4px;
     background-color: rgb(112, 112, 112, 50%);
 }
+
 .testimonials-description-text::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: var(--red-color);
 }
+
 .testimonials-description-text::-webkit-scrollbar-track {
     border-radius: 4px;
 }
 
 
-.our-testimonials-contant .our-testimonials-text-info .testimonials-description-text p:last-of-type{
+.our-testimonials-contant .our-testimonials-text-info .testimonials-description-text p:last-of-type {
     margin-bottom: 0px;
 }
 
@@ -3042,7 +3043,7 @@ button.close:hover {
 }
 
 .footer-contact-info a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 20px;
 }
@@ -3111,7 +3112,7 @@ button.close:hover {
     padding: 34px 0 38px 0;
 }
 
-.footer-blog-link{
+.footer-blog-link {
     text-align: center;
     display: inline-flex;
     flex-wrap: wrap;
@@ -3119,7 +3120,7 @@ button.close:hover {
     justify-content: center;
 }
 
-.footer-blog-link li{
+.footer-blog-link li {
     display: inline-block;
     margin: 7px 5px 7px 0;
     padding-right: 5px;
@@ -3127,18 +3128,18 @@ button.close:hover {
     border-right: 1px solid var(--common-color);
 }
 
-.footer-blog-link li:last-child{
+.footer-blog-link li:last-child {
     margin-right: 0;
     padding-right: 0;
     border-right: 0;
 }
 
-.footer-blog-link li a{
+.footer-blog-link li a {
     color: var(--common-color);
     font-size: 14px;
 }
 
-.footer-blog-link li a:hover{
+.footer-blog-link li a:hover {
     color: var(--white-color);
 }
 
@@ -3169,7 +3170,7 @@ button.close:hover {
     color: var(--red-color);
 }
 
-.footer-bottom-link li{
+.footer-bottom-link li {
     font-size: 14px;
     line-height: 1;
     font-weight: 300;
@@ -3186,12 +3187,15 @@ button.close:hover {
     border-right: 0;
 }
 
-.footer-bottom-link li a{
+.footer-bottom-link li a {
     color: var(--border-color);
     font-weight: 300;
-
+    transition: 0.3s;
 }
 
+.footer-bottom-link li a:hover {
+    color: var(--red-color);
+}
 
 /*===== Scroll To Top Css Start =====*/
 .scrolltop {
@@ -3424,9 +3428,7 @@ button.close:hover {
     margin-bottom: 0;
 }
 
-/* ++++++++++++++++++++++++++ */
-
-.our-process-sec-image-contant{
+.our-process-sec-image-contant {
     position: relative;
 }
 
@@ -3437,15 +3439,12 @@ button.close:hover {
     position: relative;
     height: 530px;
     width: 100%;
-    clip-path: polygon(0 0,var(--odd-box-width) 0%,var(--odd-box-width) var(--box-gap),100% var(--box-gap),100% 100%,0 100%);
+    clip-path: polygon(0 0, var(--odd-box-width) 0%, var(--odd-box-width) var(--box-gap), 100% var(--box-gap), 100% 100%, 0 100%);
 }
 
 .our-process-sec.odd .our-process-sec-bg {
-    clip-path: polygon(0 var(--box-gap),var(--box-gap) var(--box-gap),var(--box-gap) 0,100% 0,100% 100%,0 100%);
+    clip-path: polygon(0 var(--box-gap), var(--box-gap) var(--box-gap), var(--box-gap) 0, 100% 0, 100% 100%, 0 100%);
 }
-
-/* ++++++++++++++++++++++++++ */
-
 
 .our-process-sec .our-process-sec-icon-outer-box {
     position: absolute;
@@ -4068,6 +4067,36 @@ section.our-home-inner-page-image {
 
 /*========== Events [Page] End ==========*/
 
+/*========== Blog [Page] Start ==========*/
+
+.blog-page-sec .col-sm-6 {
+    display: none;
+}
+
+.blog-page-sec {
+    padding-top: 70px;
+}
+
+.blog-page-sec .row {
+    --bs-gutter-y: 30px;
+}
+
+.blog-page-sec-link {
+    margin-top: 44px;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-page-sec .common-image-box-2 .h5-title {
+    transition: 0.3s;
+}
+
+.blog-page-sec .common-image-box-2:hover .h5-title {
+    color: var(--red-color);
+}
+
+/*========== Blog [Page] End ==========*/
+
 /*========== Single Post [Page] Start ==========*/
 
 /*===== Single Post Inner Banner Section Start =====*/
@@ -4180,44 +4209,17 @@ html.overflow-v body {
     color: var(--white-color);
 }
 
-.you-may-also-like-slider .common-image-box-2 .h5-title{
+.you-may-also-like-slider .common-image-box-2 .h5-title {
     transition: 0.3s;
 }
 
-.you-may-also-like-slider .common-image-box-2:hover .h5-title{
+.you-may-also-like-slider .common-image-box-2:hover .h5-title {
     color: var(--red-color);
 }
 
 /*===== You May Also Like Section End =====*/
 
 /*========== Single Post [Page] End ==========*/
-
-
-/*========== Blog [Page] Start ==========*/
-
-.blog-page-sec {
-    padding-top: 70px;
-}
-
-.blog-page-sec .row {
-    --bs-gutter-y: 30px;
-}
-
-.blog-page-sec-link {
-    margin-top: 44px;
-    display: flex;
-    justify-content: center;
-}
-
-.blog-page-sec .common-image-box-2 .h5-title {
-    transition: 0.3s;
-}
-
-.blog-page-sec .common-image-box-2:hover .h5-title {
-    color: var(--red-color);
-}
-
-/*========== Blog [Page] End ==========*/
 
 /*========== Login [Page] End ==========*/
 
@@ -4260,12 +4262,8 @@ html.overflow-v body {
 }
 
 .login-form-box .form-submit-btn .sec-btn {
-    border: 1px solid var(--red-color);
     width: 100%;
-}
-
-.login-form-box .form-submit-btn .sec-btn:hover {
-    border: 1px solid var(--red-color);
+    border: none;
 }
 
 .login-forget-text {
@@ -5075,6 +5073,135 @@ a.prev.page-numbers {
     .container {
         max-width: 1400px;
     }
+
+    .common-image {
+        flex: 1;
+    }
+
+    .common-image.small-image {
+        flex: 0 0 200px;
+    }
+
+    .main-navigation ul.main-menu>li>a {
+        font-size: 22px;
+    }
+
+    .main-navigation ul.main-menu ul li a {
+        font-size: 18px;
+    }
+
+    .about-sec .sec-wp::before {
+        height: 560px;
+    }
+
+    .about-sec-right .about-sec-image {
+        width: 100%;
+    }
+
+    .check-our-home-slider .slick-list {
+        width: calc(100% + 460px);
+    }
+
+    .our-testimonials-contant {
+        max-width: 685px;
+    }
+
+    .our-testimonials-left {
+        padding: 78px 0 140px 0;
+    }
+
+    .our-testimonials-slider .slide-arrow.prev-arrow.slick-arrow {
+        left: 475px;
+    }
+
+    .our-testimonials-slider .slick-arrow {
+        top: 77%;
+        left: 530px;
+    }
+
+    .energy-star .sec-wp {
+        background-position: 5% top;
+    }
+
+    .energy-star-text-info {
+        max-width: unset;
+        margin-left: 30px;
+    }
+
+    .energy-star-text-info p {
+        font-size: 16px;
+    }
+
+    .footer-page-link>li>a {
+        font-size: 20px;
+    }
+
+    .footer-blog-link li {
+        margin: 7px 10px 7px 0;
+        padding-right: 9px;
+    }
+
+    .footer-blog-link li a {
+        font-size: 18px;
+    }
+
+    .footer-bottom-link li {
+        font-size: 18px;
+    }
+
+    .bottom-footer p,
+    .bottom-footer p a {
+        font-size: 18px;
+    }
+
+    /*===== About Page Section Start =====*/
+
+    .about-company-info {
+        margin-right: 0px;
+    }
+
+    .about-company .common-image-group {
+        margin-top: 40px;
+    }
+
+    /*===== About Page Section End =====*/
+
+    /*===== Custome Home Page Section Start =====*/
+
+    .premier-custome-home-sec .custome-home-sec-text {
+        margin-right: 0px;
+    }
+
+    .the-right-way-to-build-image-box {
+        width: 100%;
+    }
+
+    /*===== Custome Home Page Section End =====*/
+
+    /*===== Login Page Section Start =====*/
+
+    .login-page-left-contant {
+        margin-right: 0px;
+    }
+
+    .login-forget-text .forget-link {
+        font-size: 18px;
+    }
+
+    .login-form-bottom-text p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .login-page-image {
+        width: 100%;
+    }
+
+
+    /*===== Login Page Section End =====*/
+
+
+
 }
 
 
@@ -5312,7 +5439,7 @@ a.prev.page-numbers {
         display: flex !important;
     }
 
-    .for-des{
+    .for-des {
         display: none !important;
     }
 
@@ -5900,7 +6027,7 @@ a.prev.page-numbers {
 }
 
 @media screen and (max-width: 767px) {
-    .scrolltop{
+    .scrolltop {
         width: 40px;
         height: 40px;
         font-size: 18px;
@@ -6276,7 +6403,7 @@ a.prev.page-numbers {
         padding: 40px 0 90px 0;
     }
 
-    .awards-certification .sec-title{
+    .awards-certification .sec-title {
         margin-bottom: 38px;
     }
 
@@ -6298,7 +6425,7 @@ a.prev.page-numbers {
         --extra-space: 29px;
     }
 
-    .awards-certification-slider .slick-dots{
+    .awards-certification-slider .slick-dots {
         bottom: -50px;
     }
 
@@ -6332,7 +6459,7 @@ a.prev.page-numbers {
         background-size: 440px;
     }
 
-    .energy-star-text-info{
+    .energy-star-text-info {
         margin-top: -7px;
     }
 
@@ -6519,7 +6646,7 @@ a.prev.page-numbers {
         margin-bottom: 22px;
     }
 
-    .events-page-sec-image-box{
+    .events-page-sec-image-box {
         padding: 20px;
         height: 75vw;
     }
@@ -6964,7 +7091,7 @@ a.prev.page-numbers {
         --icon-box-size: 60px;
     }
 
-    .our-process-sec-icon-outer-box .our-process-sec-icon-inner-box .our-process-sec-icon-box img{
+    .our-process-sec-icon-outer-box .our-process-sec-icon-inner-box .our-process-sec-icon-box img {
         width: 30px;
     }
 
@@ -7013,7 +7140,7 @@ a.prev.page-numbers {
         padding: 8px 8px;
     }
 
-    .gallery-feature-list{
+    .gallery-feature-list {
         column-gap: 12px;
     }
 
