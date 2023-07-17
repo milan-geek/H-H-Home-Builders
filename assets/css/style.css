@@ -2164,7 +2164,7 @@ button.close:hover {
 }
 
 .main-header.transparent-header.sticky_head .site-branding a img {
-    filter: brightness(100%) invert(0);
+    filter: brightness(1) invert(0);
 }
 
 .main-header.transparent-header.sticky_head .main-navigation ul.main-menu>li>a {
